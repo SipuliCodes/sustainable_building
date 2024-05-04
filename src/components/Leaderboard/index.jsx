@@ -27,6 +27,7 @@ const Leaderboard = () => {
 
   return (
     <div className="grid-container">
+      <h1>Leaderboard: </h1>
       {buildings.sort(sortByConsumption).map(building => {
         return (<LeaderboardPlace key={building.name} building={building} />)
       }
