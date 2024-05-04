@@ -1,5 +1,51 @@
+/**
 .grid-container {
   display: grid;
   grid-template-rows: 20% 20% 20%;
   justify-content: center;
+  background-color: aqua;
+}
+ */
+.grid-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.leaderboard-place {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.leaderboard-place:last-child {
+  border-bottom: none;
+}
+
+.place-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.place-consumption {
+  font-size: 16px;
+  color: #666;
+}
+
+.place-unit {
+  font-size: 16px;
+  color: #666;
+  margin-left: 10px;
 }
