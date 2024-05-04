@@ -2,63 +2,61 @@
   --primary-color: #4caf50; /* Green */
   --secondary-color: #ffc107; /* Amber */
   --accent-color: #2196f3; /* Blue */
-  --light-bg: #f1f1f1;
+  --light-bg: #f9f9f9; /* Lighter background for a cleaner look */
   --dark-text: #333;
   --light-text: #fff;
 }
 
+body {
+  background-image: url("src/images/background.png");
+  background-size: cover; /* Ensure full cover of background */
+  background-position: center center;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: 'Open Sans', sans-serif; /* Modern and widely used font */
+  color: var(--dark-text); /* Consistent text color */
+}
+
 .grid-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+  width: 90%; /* Adaptive width */
+  max-width: 1200px; /* Increase for better spacing */
+  margin: 5% auto; /* Centering and spacing from top */
+  padding: 40px; /* More padding for better readability */
   background-color: var(--light-bg);
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Softer shadow */
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 32px; /* Larger font size for better visibility */
   color: var(--primary-color);
-  text-align: center;
+  margin-bottom: 20px; /* Space below header */
 }
 
 .leaderboard-place {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  margin: 10px 0;
+  padding: 20px; /* Increased padding for touch targets */
+  margin: 15px 0; /* More margin for separation */
   background-color: var(--light-text);
-  color: var(--dark-text);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: background-color 0.3s;
+  border-radius: 4px; /* Rounded corners for items */
+  transition: all 0.3s; /* Smoother transition */
 }
 
 .leaderboard-place:hover {
   background-color: var(--accent-color);
-  color: var(--light-text);
+  transform: scale(1.02); /* Slight scale for interactive effect */
 }
 
-.place-name {
-  font-size: 18px;
-  font-weight: bold;
+.place-name, .place-consumption, .place-unit {
+  font-weight: 600; /* Increased weight for readability */
 }
 
-.place-consumption {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.place-unit {
-  font-size: 16px;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .grid-container {
-    margin: 20px;
-    padding: 10px;
+    width: 95%;
+    padding: 20px;
   }
 
   .leaderboard-place {
@@ -66,41 +64,20 @@ h1 {
     text-align: center;
   }
 
-  .place-name,
-  .place-consumption,
-  .place-unit {
-    font-size: 14px;
+  h1 {
+    font-size: 28px;
   }
 }
 
-.recommendations-button {
-  padding: 8px 16px;
-  background-color: var(--primary-color);
-  color: var(--light-text);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.recommendations-button, .back-button {
+  font-size: 16px; /* Consistent font size for buttons */
+  padding: 12px 24px; /* Larger padding for easier click */
+  border-radius: 6px; /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for depth */
 }
 
-.recommendations-button:hover {
+.recommendations-button:hover, .back-button:hover {
   background-color: var(--secondary-color);
+  transform: translateY(-2px); /* Subtle hover effect */
 }
 
-.back-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 8px 16px;
-  background-color: var(--primary-color);
-  color: var(--light-text);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-bottom: 20px;
-}
-
-.back-button:hover {
-  background-color: var(--secondary-color);
-}
