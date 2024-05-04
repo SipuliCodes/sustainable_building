@@ -1,6 +1,6 @@
 import readNDJSONStream from "ndjson-readablestream";
 
-const fetchDataStream = async ({ id, setFn }) => {
+export const fetchDataStream = async ({ id, setFn }) => {
   const response = await fetch(
     `https://hackathon.kvanttori.fi/buildings/${id}/streams`
   );
@@ -11,5 +11,3 @@ const fetchDataStream = async ({ id, setFn }) => {
     setFn(data);
   }
 };
-
-export default {fetchDataStream}

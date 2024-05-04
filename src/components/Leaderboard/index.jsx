@@ -42,7 +42,6 @@ const Leaderboard = () => {
         return (<LeaderboardPlace key={building.name} building={building} />)
       }
       )}
-      <h2>{continuous && continuous.consumer.consumption.value}</h2>
     </div>
   )
 }
