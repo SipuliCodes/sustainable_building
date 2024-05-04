@@ -1,10 +1,16 @@
 :root {
   --primary-color: #4caf50; /* Green */
-  --secondary-color: #ffc107; /* Amber */
-  --accent-color: #2196f3; /* Blue */
+  --secondary-color: #0a9100; /* Amber */
+  --accent-color: #25bed8; /* Blue */
   --light-bg: #f9f9f9; /* Lighter background for a cleaner look */
   --dark-text: #333;
   --light-text: #fff;
+}
+
+.whiteText {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 body {
@@ -19,17 +25,19 @@ body {
 
 .grid-container {
   width: 90%; /* Adaptive width */
-  max-width: 1200px; /* Increase for better spacing */
+  max-width: 1000px; /* Increase for better spacing */
   margin: 5% auto; /* Centering and spacing from top */
   padding: 40px; /* More padding for better readability */
   background-color: var(--light-bg);
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 20px; /* Rounded corners */
   box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Softer shadow */
+  opacity: 80%;
+  background-color: transparent;
 }
 
 h1 {
   font-size: 32px; /* Larger font size for better visibility */
-  color: var(--primary-color);
+  color: white;
   margin-bottom: 20px; /* Space below header */
 }
 
@@ -42,6 +50,7 @@ h1 {
   background-color: var(--light-text);
   border-radius: 4px; /* Rounded corners for items */
   transition: all 0.3s; /* Smoother transition */
+  opacity: 100%;
 }
 
 .leaderboard-place:hover {

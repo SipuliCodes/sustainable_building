@@ -2,7 +2,7 @@ import React from "react";
 
 const LeaderboardPlace = ({ building, placement }) => {
   return (
-    <div className="leaderboard-place">
+    <div className={placement == 1 ? "first leaderboard-place" : "leaderboard-place" }>
       <span>{placement}. sija</span>
       <span className="place-name">{building.name}</span>
       <span className="place-consumption">{building.consumption} </span>

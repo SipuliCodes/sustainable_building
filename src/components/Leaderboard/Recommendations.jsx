@@ -10,13 +10,14 @@ const Recommendations = () => {
         Etusivulle
       </button>
       <h1>Energiansäästösuositukset sinulle:</h1>
-      <p>Tässä muutamia vinkkejä energiatehokkuutesi parantamiseen:</p>
-      <ul>
-        <li>Vaihda LED-valaistukseen.</li>
-        <li>Irtikytkentä laitteet, kun niitä ei käytetä.</li>
-        <li>Käytä energiatehokkaita laitteita.</li>
-        <li>Harkitse aurinkopaneeleita.</li>
-      </ul>
+      <div className="whiteText">
+        <p>Tässä muutamia vinkkejä energiatehokkuutesi parantamiseen:</p>
+        <ul>
+          <li>Vaihda LED-valaistukseen.</li>
+          <li>Kytke laitteet irti, kun niitä ei käytetä.</li>
+          <li>Käytä energiatehokkaita laitteita.</li>
+        </ul>
+      </div>
     </div>
   );
 };
