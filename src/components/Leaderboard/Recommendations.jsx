@@ -3,6 +3,12 @@ import "./Leaderboard.css"; // Reusing the existing styles
 const Recommendations = () => {
   return (
     <div className="grid-container">
+      <button
+        className="back-button"
+        onClick={() => (window.location.href = "/")}
+      >
+        Etusivulle
+      </button>
       <h1>Energiansäästösuositukset sinulle:</h1>
       <p>Tässä muutamia vinkkejä energiatehokkuutesi parantamiseen:</p>
       <ul>
