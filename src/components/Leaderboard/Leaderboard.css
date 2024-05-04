@@ -86,3 +86,21 @@ h1 {
 .recommendations-button:hover {
   background-color: var(--secondary-color);
 }
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: var(--secondary-color);
+}
