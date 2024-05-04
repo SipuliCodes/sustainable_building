@@ -6,7 +6,7 @@ const Leaderboard = () => {
   const buildings = [
     {
       name: "1",
-      consumption: "4.4",
+      consumption: "6.4",
       unit: "kWh"
     },
     {
