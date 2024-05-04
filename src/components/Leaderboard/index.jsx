@@ -23,17 +23,17 @@ const Leaderboard = () => {
   const buildings = [
     {
       name: "Rakennus 1",
-      consumption: building1.consumer.consumption.value,
+      consumption: Math.round(building1.consumer.consumption.value * 100) / 100,
       unit: building1.consumer.consumption.unit,
     },
     {
       name: "Rakennus 2",
-      consumption: building2.consumer.consumption.value,
+      consumption: Math.round(building2.consumer.consumption.value * 100) / 100,
       unit: building2.consumer.consumption.unit,
     },
     {
       name: "Rakennus 3",
-      consumption: building3.consumer.consumption.value,
+      consumption: Math.round(building3.consumer.consumption.value * 100) / 100,
       unit: building3.consumer.consumption.unit,
     },
   ];
@@ -45,8 +45,9 @@ const Leaderboard = () => {
   return (
     <div className="grid-container">
       <h1>Tulostaulu: </h1>
-      {buildings.sort(sortByConsumption).map(building => {
-        return (<LeaderboardPlace key={building.name} building={building} />)
+      {buildings.sort(sortByConsumption).map((building, index) => {
+        const placement = index + 1
+        return (<LeaderboardPlace key={building.name} building={building} placement={placement} />)
       }
       )}
     </div>
