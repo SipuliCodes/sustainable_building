@@ -3,13 +3,13 @@ import "./Leaderboard.css"; // Reusing the existing styles
 const Recommendations = () => {
   return (
     <div className="grid-container">
-      <h1>Energy Saving Recommendations:</h1>
-      <p>Here are some tips to improve your energy efficiency:</p>
+      <h1>Energiansäästösuositukset:</h1>
+      <p>Tässä muutamia vinkkejä energiatehokkuutesi parantamiseen:</p>
       <ul>
-        <li>Switch to LED lighting.</li>
-        <li>Unplug devices when not in use.</li>
-        <li>Use energy-efficient appliances.</li>
-        <li>Consider solar panels.</li>
+        <li>Vaihda LED-valaistukseen.</li>
+        <li>Irtikytkentä laitteet, kun niitä ei käytetä.</li>
+        <li>Käytä energiatehokkaita laitteita.</li>
+        <li>Harkitse aurinkopaneeleita.</li>
       </ul>
     </div>
   );
