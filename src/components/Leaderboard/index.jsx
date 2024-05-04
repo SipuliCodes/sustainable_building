@@ -15,17 +15,17 @@ const Leaderboard = () => {
   
   const buildings = [
     {
-      name: "Asunto 1",
+      name: "Rakennus 1",
       consumption: "4.4",
       unit: "kWh"
     },
     {
-      name: "Asunto 2",
+      name: "Rakennus 2",
       consumption: "5.4",
       unit: "kWh"
     },
     {
-      name: "Asunto 3",
+      name: "Rakennus 3",
       consumption: "3.4",
       unit: "kWh"
     }
@@ -37,7 +37,7 @@ const Leaderboard = () => {
 
   return (
     <div className="grid-container">
-      <h1>Leaderboard: </h1>
+      <h1>Tulostaulu: </h1>
       {buildings.sort(sortByConsumption).map(building => {
         return (<LeaderboardPlace key={building.name} building={building} />)
       }
