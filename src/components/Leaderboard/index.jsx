@@ -1,9 +1,10 @@
 import LeaderboardPlace from "./LeaderboardPlace"
 import "./Leaderboard.css"
 import readNDJSONStream from 'ndjson-readablestream'
+import { useState } from "react"
 
 const Leaderboard = () => {
-  let continuous;
+  const [continuous, setContinuous] = useState(undefined)
 
   const fetchData = async () => {
     const response = await fetch(
@@ -13,7 +14,7 @@ const Leaderboard = () => {
     if (!response.body) return;
 
     for await (const data of readNDJSONStream(response.body)) {
-      continuous = data
+      setContinuous(data)
       console.log(data)
 
     }
