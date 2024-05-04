@@ -8,7 +8,6 @@
 }
 
 .whiteText {
-  color: white;
   font-size: 20px;
   font-weight: bold;
 }
@@ -41,6 +40,13 @@ h1 {
   margin-bottom: 20px; /* Space below header */
 }
 
+.flexBox {
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+  margin: 0;
+}
+
 .leaderboard-place {
   display: flex;
   justify-content: space-between;
@@ -50,7 +56,6 @@ h1 {
   background-color: var(--light-text);
   border-radius: 4px; /* Rounded corners for items */
   transition: all 0.3s; /* Smoother transition */
-  opacity: 100%;
 }
 
 .leaderboard-place:hover {
@@ -78,6 +83,17 @@ h1 {
   }
 }
 
+.tulostaulu {
+  text-align: start;
+}
+
+li {
+  background-color: white;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 .recommendations-button, .back-button {
   font-size: 16px; /* Consistent font size for buttons */
   padding: 12px 24px; /* Larger padding for easier click */
@@ -90,3 +106,6 @@ h1 {
   transform: translateY(-2px); /* Subtle hover effect */
 }
 
+.filler {
+  width: 30%;
+}

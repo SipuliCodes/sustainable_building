@@ -1,0 +1,51 @@
+.buildingOuterContainer {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 50% 50%;
+}
+
+.buildingInnerContainer {
+  display: grid;
+  width: 800px;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.back-button {
+  font-size: 16px;
+  /* Consistent font size for buttons */
+  padding: 12px 24px;
+  /* Larger padding for easier click */
+  border-radius: 6px;
+  /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Shadow for depth */
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.back-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  /* Subtle hover effect */
+}
+
+.background {
+  background-image: url('../../images/background.png');
+  background-size: cover;
+    /* Ensure full cover of background */
+  background-position: center center;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
