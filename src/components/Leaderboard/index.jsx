@@ -1,27 +1,17 @@
 import LeaderboardPlace from "./LeaderboardPlace"
 import "./Leaderboard.css"
 import { useState } from "react"
+import { fetchDataStream} from "../../services/getBuildingData"
+
 
 const Leaderboard = () => {
-  const [continuous, setContinuous] = useState(undefined)
+  const [building1, setBuilding1] = useState(undefined)
+  const [building2, setBuilding2] = useState(undefined)
+  const [building3, setBuilding3] = useState(undefined);
 
-  const fetchData = async () => {
-    const response = await fetch(
-      "https://hackathon.kvanttori.fi/buildings/d46078e8-8df8-4333-b961-fe8e27ccc130/streams"
-    );
+  fetchDataStream()  
+  
 
-    if (!response.body) return;
-
-    for await (const data of readNDJSONStream(response.body)) {
-      setContinuous(data)
-      console.log(data)
-
-    }
-  }
-
-  console.log(continuous)
-
-  fetchData()
   
   const buildings = [
     {
