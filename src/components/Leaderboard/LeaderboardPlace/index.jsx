@@ -8,9 +8,9 @@ const LeaderboardPlace = ({ building }) => {
       <span className="place-unit">{building.unit}</span>
       <button
         className="recommendations-button"
-        onClick={() => (window.location.href = "/recommendations")}
+        onClick={() => (window.location.href = "/suositukset")}
       >
-        Recommendations
+        Suositukset - vähennä kulutusta!
       </button>
     </div>
   );

@@ -3,7 +3,7 @@ import "./Leaderboard.css"; // Reusing the existing styles
 const Recommendations = () => {
   return (
     <div className="grid-container">
-      <h1>Energiansäästösuositukset:</h1>
+      <h1>Energiansäästösuositukset sinulle:</h1>
       <p>Tässä muutamia vinkkejä energiatehokkuutesi parantamiseen:</p>
       <ul>
         <li>Vaihda LED-valaistukseen.</li>
