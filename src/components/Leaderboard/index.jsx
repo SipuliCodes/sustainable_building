@@ -1,6 +1,5 @@
 import LeaderboardPlace from "./LeaderboardPlace"
 import "./Leaderboard.css"
-import readNDJSONStream from 'ndjson-readablestream'
 import { useState } from "react"
 
 const Leaderboard = () => {
